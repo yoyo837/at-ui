@@ -59,7 +59,7 @@ export default {
       }
 
       return Object.assign(userStyle, {
-        'marginRight': `${this.$parent.gap}px`
+        'marginRight': this.$parent.gap == null ? null : `${this.$parent.gap}px`
       })
     }
   },
